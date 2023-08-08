@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="node.css">
+    <title>Calculator</title>
+    <h1>Calculator</h1>
+    <style>
+        body{
+            text-align: center;
+            background-color:salmon;
+        }
+        input[type=number]{
+         border-width: 2px;  
+         padding-right: 70px;
+         padding-bottom:10px;
+        }
+        table{
+            margin-left:600px;
+            margin-top:20px;
+        }
+        table tr td{
+            padding:10px;
+        }
+        table tr td button{
+            padding:20px;
+            border-radius:20%;
+        }
+        .Calculator{
+            border:solid 2px black;
+            padding-top:30px;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="Calculator">
+        <input type="number" id="result" readonly>
+        <table>
+            <tr>
+                <td><button onclick="append(7)">7</button></td>
+                <td><button onclick="append(8)">8</button></td>
+                <td><button onclick="append(9)">9</button></td>
+                <td><button onclick="operation('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append(4)">4</button></td>
+                <td><button onclick="append(5)">5</button></td>
+                <td><button onclick="append(6)">6</button></td>
+                <td><button onclick="operation('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append(3)">3</button></td>
+                <td><button onclick="append(2)">2</button></td>
+                <td><button onclick="append(1)">1</button></td>
+                <td><button onclick="operation('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append(0)">0</button></td>
+                <td><button onclick="reset('c')">c</button></td>
+                <td><button onclick="output('=')">=</button></td>
+                <td><button onclick="operation('/')">/</button></td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="node.js"></script>
+</body>
+</html>
